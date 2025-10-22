@@ -1,0 +1,1 @@
+# Fullstack-NextJS-Mindimedia
