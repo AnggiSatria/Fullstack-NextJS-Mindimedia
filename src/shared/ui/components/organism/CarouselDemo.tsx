@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ImageCarousel from "../atoms/ImageCarousel";
 import SliderCarousel from "../molecules/SliderCarousel";
+import SliderCarouselSwipe from "../molecules/SliderCarouselSwipe";
 
 export default function CarouselDemo() {
   const cards = [
@@ -66,7 +67,7 @@ export default function CarouselDemo() {
         Discover cozy elegance, where tranquility meets Bali’s serene beauty.
       </h2>
 
-      <div className="w-11/12 relative">
+      <div className="hidden sm:inline-flex relative w-11/12">
         <SliderCarousel
           items={cards.map((card, i) => (
             <div key={i} className="flex flex-col">
@@ -89,6 +90,29 @@ export default function CarouselDemo() {
           visibleCards={2}
           gap={20}
         />
+      </div>
+
+      <div className="sm:hidden inline-flex relative w-11/12">
+        <SliderCarouselSwipe gap={16} visibleCards={2}>
+          {cards.map((card, i) => (
+            <div key={i} className="flex flex-col">
+              <ImageCarousel images={card.images} className="mb-4" />
+              <div className="space-y-4">
+                <div className="space-y-2.5 lg:space-y-3.5">
+                  <h3 className="text-[#b59453] font-americana text-lg mb-2">
+                    {card.title}
+                  </h3>
+                  <p className="text-sm text-gray-600">{card.desc}</p>
+                </div>
+                <Link href="/" className="flex ">
+                  <span className="text-[8px] md:text-xs lg:text-sm  font-americana text-[#c69c4d] underline hover:no-underline">
+                    Discover
+                  </span>
+                </Link>
+              </div>
+            </div>
+          ))}
+        </SliderCarouselSwipe>
       </div>
     </div>
   );

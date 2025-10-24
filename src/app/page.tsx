@@ -6,6 +6,7 @@ import DescriptionSection from "@/shared/ui/components/organism/DescriptionSecti
 import SectionRevealBackground from "@/shared/ui/components/templates/SectionRevealBackground";
 import CarouselSpecialPrice from "@/shared/ui/components/organism/CarouselSpecialPrice";
 import WellnessSection from "@/shared/ui/components/molecules/WellnessSection";
+import VideoPlayer from "@/shared/ui/components/atoms/VideoPlayer";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
           <SectionRevealBackground />
           <CarouselSpecialPrice />
           <WellnessSection />
+          <VideoPlayer />
         </div>
       </main>
     </>
