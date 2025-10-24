@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ReusableText from "../atoms/ReusabledText";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -67,9 +68,9 @@ export default function ScrollRevealImages() {
         </div>
 
         <div className="max-w-xl text-center px-4">
-          <h2 className="text-[#b59453] font-americana text-xl md:text-2xl lg:text-3xl mb-4">
+          <ReusableText>
             Discover your path to wellness and growth.
-          </h2>
+          </ReusableText>
           <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-6">
             At Ulaman we redefine luxury as an experience that not only pampers
             the senses but also nurtures the soul. Nestled in pristine nature,
@@ -81,7 +82,6 @@ export default function ScrollRevealImages() {
           </p>
         </div>
 
-        {/* Gambar kanan */}
         <div
           ref={rightImgRef}
           className="relative w-64 h-96 lg:w-80 lg:h-112 rounded-md overflow-hidden shadow-lg"

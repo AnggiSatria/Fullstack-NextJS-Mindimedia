@@ -2,6 +2,7 @@ import Link from "next/link";
 import ImageCarousel from "../atoms/ImageCarousel";
 import SliderCarousel from "../molecules/SliderCarousel";
 import SliderCarouselSwipe from "../molecules/SliderCarouselSwipe";
+import ReusableText from "../atoms/ReusabledText";
 
 export default function CarouselDemo() {
   const cards = [
@@ -63,9 +64,9 @@ export default function CarouselDemo() {
 
   return (
     <div className="relative flex flex-col py-20 bg-[#f4efe8] sm:items-end">
-      <h2 className="w-1/2 text-center text-2xl sm:text-sm md:text-base lg:text-lg xl:text-2xl font-americana text-[#b59453] mb-8 mx-auto">
+      <ReusableText>
         Discover cozy elegance, where tranquility meets Bali’s serene beauty.
-      </h2>
+      </ReusableText>
 
       <div className="hidden sm:inline-flex relative w-11/12">
         <SliderCarousel

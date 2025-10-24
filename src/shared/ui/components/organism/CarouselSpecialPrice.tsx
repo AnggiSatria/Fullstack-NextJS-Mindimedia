@@ -3,6 +3,7 @@
 import Link from "next/link";
 import SliderCarousel from "../molecules/SliderCarousel";
 import CardItem from "../atoms/CardItem";
+import ReusableText from "../atoms/ReusabledText";
 
 export default function CarouselSpecialPrice() {
   const cards = [
@@ -22,9 +23,9 @@ export default function CarouselSpecialPrice() {
 
   return (
     <div className="relative flex flex-col py-20 bg-[#f4efe8] items-center">
-      <h2 className="w-1/2 text-center text-2xl sm:text-sm md:text-base lg:text-lg xl:text-2xl font-americana text-[#b59453] mb-8 mx-auto">
+      <ReusableText>
         Book one of our special packages for a getaway you’ll never forget.
-      </h2>
+      </ReusableText>
 
       <div className="w-11/12 relative">
         <SliderCarousel
