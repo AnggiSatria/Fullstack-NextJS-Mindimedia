@@ -10,6 +10,12 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-americana: "Americana Serif", serif;
+  --font-BasisGrotesqueArabicProBlack: "BasisGrotesqueArabicPro-Black"
+  --font-BasisGrotesqueArabicProBold: "BasisGrotesqueArabicPro-Bold"
+  --font-BasisGrotesqueArabicProLight: "BasisGrotesqueArabicPro-Light"
+  --font-BasisGrotesqueArabicProMedium: "BasisGrotesqueArabicPro-Medium"
+  --font-BasisGrotesqueArabicProRegular: "BasisGrotesqueArabicPro-Regular"
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +29,80 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: "Americana Serif";
+  src: url("/fonts/Americana-Font-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Americana Serif Semibold";
+  src: url("/fonts/Americana-Font-Regular.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Americana Serif Bold";
+  src: url("/fonts/Americana-Font-Regular.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BasisGrotesqueArabicPro-Black";
+  src: url("/fonts/BasisGrotesqueArabicPro-Black.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BasisGrotesqueArabicPro-Bold";
+  src: url("/fonts/BasisGrotesqueArabicPro-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BasisGrotesqueArabicPro-Light";
+  src: url("/fonts/BasisGrotesqueArabicPro-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BasisGrotesqueArabicPro-Medium";
+  src: url("/fonts/BasisGrotesqueArabicPro-Medium.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BasisGrotesqueArabicPro-Regular";
+  src: url("/fonts/BasisGrotesqueArabicPro-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-americana {
+  font-family: "Americana Serif", serif;
+}
+
+.font-BasisGrotesqueArabicProLight {
+  font-family: "BasisGrotesqueArabicPro-Light", sans-serif;
+}
+
+.font-BasisGrotesqueArabicProBold {
+  font-family: "BasisGrotesqueArabicPro-Bold", sans-serif;
 }
