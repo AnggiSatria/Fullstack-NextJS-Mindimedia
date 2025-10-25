@@ -12,6 +12,9 @@ import TestimonialsSlider from "@/shared/ui/components/organism/TestimonialSlide
 import DiscoverUlamanMap from "@/shared/ui/components/organism/DiscoverUlamanMap";
 import ActivitiesList from "@/shared/ui/components/molecules/ActivityList";
 import WeeklySchedule from "@/shared/ui/components/molecules/WeeklySchedule";
+import SectionTextBook from "@/shared/ui/components/molecules/SectionTextBook";
+import SectionSponsorship from "@/shared/ui/components/organism/SectionSponsorship";
+import FooterMarquee from "@/shared/ui/components/molecules/FooterMarquee";
 
 export default function Home() {
   return (
@@ -32,6 +35,9 @@ export default function Home() {
           <TestimonialsSlider />
           <ActivitiesList />
           <WeeklySchedule />
+          <SectionTextBook />
+          <SectionSponsorship />
+          <FooterMarquee />
         </div>
       </main>
     </>
