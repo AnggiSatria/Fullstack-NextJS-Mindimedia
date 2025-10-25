@@ -63,7 +63,7 @@ export default function CarouselDemo() {
   ];
 
   return (
-    <div className="relative flex flex-col py-20 bg-[#f4efe8] sm:items-end">
+    <div className="relative flex flex-col py-20 bg-[#f4efe8] sm:items-end w-full">
       <ReusableText>
         Discover cozy elegance, where tranquility meets Bali’s serene beauty.
       </ReusableText>
