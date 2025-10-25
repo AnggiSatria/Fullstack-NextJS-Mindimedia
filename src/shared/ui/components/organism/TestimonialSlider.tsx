@@ -47,7 +47,6 @@ export default function TestimonialsSlider() {
 
   return (
     <div className="w-full max-w-5xl mx-auto px-4 py-12 text-[#5e5a4b]">
-      {/* Header */}
       <div className="flex flex-col gap-2 mb-8 items-start">
         <ReusableText className="text-left! flex items-start mx-0!">
           What Our Guests Have To Say About Us

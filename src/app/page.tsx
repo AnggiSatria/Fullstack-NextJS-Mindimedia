@@ -9,6 +9,7 @@ import WellnessSection from "@/shared/ui/components/molecules/WellnessSection";
 import VideoPlayer from "@/shared/ui/components/atoms/VideoPlayer";
 import SectionPhotoInfo from "@/shared/ui/components/organism/SectionPhotoInfo";
 import TestimonialsSlider from "@/shared/ui/components/organism/TestimonialSlider";
+import DiscoverUlamanMap from "@/shared/ui/components/organism/DiscoverUlamanMap";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
           <WellnessSection />
           <VideoPlayer />
           <SectionPhotoInfo />
+          <DiscoverUlamanMap />
           <TestimonialsSlider />
         </div>
       </main>
