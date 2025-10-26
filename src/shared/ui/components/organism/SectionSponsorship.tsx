@@ -4,6 +4,7 @@ import { Minus, Plus } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import ReusableText from "../atoms/ReusabledText";
+import LogoMarquee from "../atoms/LogoMarquee";
 
 export default function SectionSponsorship() {
   const [adult, setAdult] = useState<number>(2);
@@ -300,6 +301,64 @@ export default function SectionSponsorship() {
               </nav>
             </div>
           </section>
+        </div>
+        <LogoMarquee />
+        <div className="pt-20 app-container text-white">
+          <nav>
+            <ul className="flex flex-row flex-wrap gap-x-1 gap-y-4 justify-between px-3">
+              <li>
+                <a
+                  href="/legal/terms"
+                  className="text-smallest ui-underline-anim text-white text-[8px] md:text-xs"
+                >
+                  Terms
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/legal/privacy-policy"
+                  className="text-smallest ui-underline-anim text-white text-[8px] md:text-xs"
+                >
+                  Privacy
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/contact/ulaman-bookings"
+                  className="text-smallest ui-underline-anim text-white text-[8px] md:text-xs"
+                >
+                  Ulaman Bookings
+                </a>
+              </li>
+
+              <li>
+                <span className="text-smallest text-white text-[8px] md:text-xs">
+                  Kids under 6 are not advised.
+                </span>
+              </li>
+
+              <li>
+                <span className="text-smallest text-white text-[8px] md:text-xs">
+                  © 2024-2025 Two Moons Studio for ulamanbali.com. All Rights
+                  Reserved
+                </span>
+              </li>
+
+              <li className="order-3">
+                <a
+                  href="https://www.twomoonsstudio.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-smallest no-heart-color ui-underline-anim text-white text-[8px] md:text-xs"
+                >
+                  Made With ❤︎ By{" "}
+                  <span className="opacity-100 text-white">
+                    Two Moons Studio
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
