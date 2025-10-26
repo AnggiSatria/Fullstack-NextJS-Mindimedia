@@ -11,7 +11,7 @@ export default function FooterMarquee() {
   ];
 
   return (
-    <div className="w-full bg-[#efebe2] h-7 flex items-center overflow-hidden relative">
+    <div className="w-full bg-[#efebe2] h-7 flex items-center overflow-hidden relative py-10 -mt-[50px]">
       <motion.div
         className="flex whitespace-nowrap gap-6 text-[#4b564c] text-sm font-light leading-none"
         animate={{ x: ["0%", "-100%"] }}
